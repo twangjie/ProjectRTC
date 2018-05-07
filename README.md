@@ -17,14 +17,22 @@ The client is built with [angularjs](https://angularjs.org/).
 
 It requires [node.js](http://nodejs.org/download/)
 
-* git clone https://github.com/pchab/ProjectRTC.git
 * cd ProjectRTC/
 * npm install
-* npm start
+
+## run
+
+* Config ICE Services in rtcClient.js
+
+        Modify:
+        ```
+        iceServers: [
+                    {"url": "stun:23.21.150.121"},
+                    {"url": "stun:stun.l.google.com:19302"}
+                  ]
+        ```
+
+* node app
 
 The server will run on port 3000.
 You can test it in the (Chrome or Firefox) browser at localhost:3000.
-
-## Author
-
-- [Pierre Chabardes](mailto:pierre@chabardes.net)

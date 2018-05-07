@@ -4,6 +4,11 @@ var PeerManager = (function () {
       config = {
         peerConnectionConfig: {
           iceServers: [
+            {
+                "url":"stun:202.5.17.228:3478?transport=udp",
+                "credential":"0x0ee9ce6f85ad301efbe801f95ea8d4ab",
+                "username":"admin"
+            },
             {"url": "stun:23.21.150.121"},
             {"url": "stun:stun.l.google.com:19302"}
           ]
